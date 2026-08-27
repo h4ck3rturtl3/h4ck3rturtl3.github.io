@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[ HackerTurtles ] // writeups</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&family=Share+Tech+Mono&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="matrix"></canvas>
+<div class="wrap">
+
+  <header class="banner">
+    <div class="glitch" data-text="HACKERTURTLES">HACKERTURTLES</div>
+    <div class="tagline">// we shell · we pwn · we never retreat</div>
+  </header>
+
+  <div class="grid">
+
+    <nav class="menu frame" aria-label="Hauptmenü">
+      <div class="menu-head">&gt; navigation_</div>
+      <ul>
+        <li><a href="index.html"><span class="bullet">[#]</span> home</a></li>
+        <li><a href="crew.html"><span class="bullet">[#]</span> die crew</a></li>
+        <li><a href="stats.html"><span class="bullet">[#]</span> htb stats</a></li>
+        <li><a href="writeups.html" class="active"><span class="bullet">[#]</span> writeups</a></li>
+        <li><a href="lernpfad.html"><span class="bullet">[#]</span> lernpfad</a></li>
+        <li><a href="tools.html"><span class="bullet">[#]</span> tools &amp; setup</a></li>
+        <li><a href="kontakt.html"><span class="bullet">[#]</span> kontakt</a></li>
+      </ul>
+      <div class="status frame">
+        <div><span class="k">status</span> :: <span class="v">ONLINE</span></div>
+        <div><span class="k">members</span> :: <span class="v">05</span></div>
+        <div><span class="k">rank</span> :: <span class="v">HACKER</span></div>
+        <div><span class="k">uplink</span> :: <span class="v">SECURE</span><span class="blink">_</span></div>
+      </div>
+    </nav>
+
+    <main>
+      <div>
+        <p class="breadcrumb">~/hackerturtles/writeups</p>
+        <h1 class="page-title"><span class="pre">&gt;</span> writeups</h1>
+      </div>
+
+      <!-- Vorhandene Writeups -->
+      <section class="panel frame">
+        <h2><span class="pre">&gt;</span> archiv</h2>
+        <div id="wu-list" class="wu-list">
+          <div class="wu-item frame"><span class="m">lade writeups...</span></div>
+        </div>
+      </section>
+
+      <!-- Upload -->
+      <section class="frame">
+        <div class="wu-form">
+          <h2 style="margin:0;font-family:'VT323',monospace;font-weight:400;font-size:26px;color:var(--green);">
+            <span style="color:var(--magenta)">&gt;</span> neues writeup einreichen
+          </h2>
+
+          <div class="field">
+            <label for="f-title">titel</label>
+            <input id="f-title" type="text" placeholder="z.B. Codify – User & Root">
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="f-cat">kategorie</label>
+              <select id="f-cat">
+                <option>Machine</option>
+                <option>Challenge</option>
+                <option>Sherlock</option>
+                <option>Notes</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-diff">schwierigkeit</label>
+              <select id="f-diff">
+                <option>Easy</option>
+                <option>Medium</option>
+                <option>Hard</option>
+                <option>Insane</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-author">autor / handle</label>
+              <input id="f-author" type="text" placeholder="@handle">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="f-body">inhalt (markdown)</label>
+            <textarea id="f-body" placeholder="## Recon&#10;&#10;nmap -sC -sV ...&#10;&#10;## Foothold&#10;&#10;...&#10;&#10;## Privesc&#10;&#10;..."></textarea>
+          </div>
+
+          <div class="btn-row">
+            <button id="btn-commit" class="btn btn-primary" type="button">&gt;_ auf github committen</button>
+            <button id="btn-download" class="btn btn-ghost" type="button">als .md herunterladen</button>
+            <button id="btn-copy" class="btn btn-ghost" type="button">markdown kopieren</button>
+          </div>
+
+          <div id="f-msg" style="font-size:13px;min-height:18px;letter-spacing:.03em;"></div>
+
+          <div class="note">
+            <span class="tag">[security]</span> Es liegt <b>kein Token</b> in dieser Seite. „Committen" öffnet
+            GitHubs eigenen Editor – ihr seid mit <b>eurem</b> Login angemeldet. Wer Schreibrechte hat,
+            committet direkt; alle anderen bekommen automatisch einen Fork + Pull Request (Review-Flow).
+            Vorher oben in <code>writeups.js</code> Repo-Owner &amp; -Name eintragen.
+          </div>
+        </div>
+      </section>
+
+      <div class="ticker frame">
+        <span>+++ WENN'S NICHT DOKUMENTIERT IST, IST ES NICHT PASSIERT +++ WRITE IT DOWN, LEVEL UP +++ HACKERTURTLES +++</span>
+      </div>
+    </main>
+  </div>
+
+  <footer>:: HackerTurtles &copy; 2026 :: nur zu bildungs- und trainingszwecken ::</footer>
+</div>
+<script src="matrix.js"></script>
+<script src="writeups.js"></script>
+</body>
+</html>

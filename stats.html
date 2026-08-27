@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[ HackerTurtles ] // htb stats</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&family=Share+Tech+Mono&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="matrix"></canvas>
+<div class="wrap">
+
+  <header class="banner">
+    <div class="glitch" data-text="HACKERTURTLES">HACKERTURTLES</div>
+    <div class="tagline">// we shell · we pwn · we never retreat</div>
+  </header>
+
+  <div class="grid">
+
+    <nav class="menu frame" aria-label="Hauptmenü">
+      <div class="menu-head">&gt; navigation_</div>
+      <ul>
+        <li><a href="index.html"><span class="bullet">[#]</span> home</a></li>
+        <li><a href="crew.html"><span class="bullet">[#]</span> die crew</a></li>
+        <li><a href="stats.html" class="active"><span class="bullet">[#]</span> htb stats</a></li>
+        <li><a href="writeups.html"><span class="bullet">[#]</span> writeups</a></li>
+        <li><a href="lernpfad.html"><span class="bullet">[#]</span> lernpfad</a></li>
+        <li><a href="tools.html"><span class="bullet">[#]</span> tools &amp; setup</a></li>
+        <li><a href="kontakt.html"><span class="bullet">[#]</span> kontakt</a></li>
+      </ul>
+      <div class="status frame">
+        <div><span class="k">status</span> :: <span class="v">ONLINE</span></div>
+        <div><span class="k">members</span> :: <span class="v">05</span></div>
+        <div><span class="k">rank</span> :: <span class="v">HACKER</span></div>
+        <div><span class="k">uplink</span> :: <span class="v">SECURE</span><span class="blink">_</span></div>
+      </div>
+    </nav>
+
+    <main>
+      <div>
+        <p class="breadcrumb">~/hackerturtles/stats</p>
+        <h1 class="page-title"><span class="pre">&gt;</span> htb stats</h1>
+      </div>
+
+      <section class="tiles">
+        <div class="tile frame"><div class="num">142</div><div class="lbl">machines owned</div></div>
+        <div class="tile frame"><div class="num">318</div><div class="lbl">flags gesamt</div></div>
+        <div class="tile frame"><div class="num">TOP 8%</div><div class="lbl">team ranking</div></div>
+      </section>
+
+      <section class="panel frame">
+        <h2><span class="pre">&gt;</span> letzte owns</h2>
+        <table class="data">
+          <thead>
+            <tr><th>box</th><th>schwierigkeit</th><th>owned by</th><th>datum</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Codify</td><td><span class="badge b-easy">EASY</span></td><td>@handle_02</td><td>2026-08-14</td></tr>
+            <tr><td>Analytics</td><td><span class="badge b-medium">MEDIUM</span></td><td>@handle_01</td><td>2026-08-09</td></tr>
+            <tr><td>Manager</td><td><span class="badge b-hard">HARD</span></td><td>@handle_03</td><td>2026-08-02</td></tr>
+            <tr><td>Blurry</td><td><span class="badge b-medium">MEDIUM</span></td><td>@handle_04</td><td>2026-07-27</td></tr>
+            <tr><td>Sandworm</td><td><span class="badge b-insane">INSANE</span></td><td>team</td><td>2026-07-19</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="panel frame">
+        <h2><span class="pre">&gt;</span> team-fortschritt</h2>
+        <p>Nächster Meilenstein: Rank <span class="prompt">PRO HACKER</span> – noch ~5 % Ownership,
+        Fokus auf Medium/Hard-Boxen und saubere Writeups.</p>
+        <div class="note">
+          <span class="tag">[tipp]</span> HTB bietet offizielle Team-Profile. Wenn ihr wollt, kann die Seite
+          später eure echten Zahlen automatisch ziehen – das würde eine kleine Anbindung (z.B. ein
+          Cloudflare Worker als Proxy) brauchen, da HTB kein offenes CORS-API hat. Sag Bescheid,
+          wenn wir das angehen.
+        </div>
+      </section>
+
+      <div class="ticker frame">
+        <span>+++ EASY TODAY, INSANE TOMORROW +++ COUNT THE FLAGS, NOT THE HOURS +++ HACKERTURTLES +++</span>
+      </div>
+    </main>
+  </div>
+
+  <footer>:: HackerTurtles &copy; 2026 :: nur zu bildungs- und trainingszwecken ::</footer>
+</div>
+<script src="matrix.js"></script>
+</body>
+</html>

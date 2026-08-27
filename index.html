@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[ HackerTurtles ] // access granted</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&family=Share+Tech+Mono&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="matrix"></canvas>
+<div class="wrap">
+
+  <div class="grid">
+
+    <nav class="menu frame" aria-label="Hauptmenü">
+      <div class="menu-head">&gt; navigation_</div>
+      <ul>
+        <li><a href="index.html" class="active"><span class="bullet">[#]</span> home</a></li>
+        <li><a href="crew.html"><span class="bullet">[#]</span> die crew</a></li>
+        <li><a href="stats.html"><span class="bullet">[#]</span> htb stats</a></li>
+        <li><a href="writeups.html"><span class="bullet">[#]</span> writeups</a></li>
+        <li><a href="lernpfad.html"><span class="bullet">[#]</span> lernpfad</a></li>
+        <li><a href="tools.html"><span class="bullet">[#]</span> tools &amp; setup</a></li>
+        <li><a href="kontakt.html"><span class="bullet">[#]</span> kontakt</a></li>
+      </ul>
+      <div class="status frame">
+        <div><span class="k">status</span> :: <span class="v">ONLINE</span></div>
+        <div><span class="k">members</span> :: <span class="v">05</span></div>
+        <div><span class="k">rank</span> :: <span class="v">HACKER</span></div>
+        <div><span class="k">uplink</span> :: <span class="v">SECURE</span><span class="blink">_</span></div>
+      </div>
+    </nav>
+
+    <main>
+
+      <section class="hero-img has-photo frame" aria-label="HackerTurtles Crew">
+        <img src="crew.png" alt="HackerTurtles Crew – vier Ninja-Schildkröten am Hacken">
+      </section>
+
+      <section class="panel frame">
+        <h2><span class="pre">$</span> whoami</h2>
+        <p><span class="prompt">root@hackerturtles:~#</span> Wir sind eine kleine Truppe aus dem SOC,
+        die sich regelmäßig zusammensetzt und auf HackTheBox Maschinen plättet. Keine Profis,
+        keine Egos – nur Leute, die besser werden wollen. Panzer an, Kopf runter, Shell auf.</p>
+        <p>Diese Seite ist unser schwarzes Brett: Fortschritt, Writeups, Lernpfad und der
+        nächste Session-Termin. Weniger reden, mehr rooten.</p>
+      </section>
+
+      <section class="tiles">
+        <div class="tile frame"><div class="num">142</div><div class="lbl">machines owned</div></div>
+        <div class="tile frame"><div class="num">TOP 8%</div><div class="lbl">htb ranking</div></div>
+        <div class="tile frame"><div class="num">27</div><div class="lbl">writeups</div></div>
+      </section>
+
+      <section class="panel frame">
+        <h2><span class="pre">&gt;</span> nächste session</h2>
+        <p><span class="prompt">[+]</span> Donnerstag · 18:00 · Meetingraum / Discord</p>
+        <p><span class="prompt">[+]</span> Fokus: Active Directory &amp; Privilege Escalation</p>
+        <p><span class="prompt">[+]</span> Bring dein eigenes Kali / Parrot mit.</p>
+      </section>
+
+      <div class="ticker frame">
+        <span>+++ GREETZ AN ALLE, DIE MIT UNS GRINDEN +++ NEVER STOP LEARNING +++ TRY HARDER +++ RESPECT THE BOX +++ HACKERTURTLES WAS HERE +++ HACK THE PLANET +++</span>
+      </div>
+
+    </main>
+  </div>
+
+  <footer>:: HackerTurtles &copy; 2026 :: nur zu bildungs- und trainingszwecken :: powered by github pages ::</footer>
+</div>
+<script src="matrix.js"></script>
+</body>
+</html>

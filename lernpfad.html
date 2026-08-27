@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[ HackerTurtles ] // lernpfad</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&family=Share+Tech+Mono&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="matrix"></canvas>
+<div class="wrap">
+
+  <header class="banner">
+    <div class="glitch" data-text="HACKERTURTLES">HACKERTURTLES</div>
+    <div class="tagline">// we shell · we pwn · we never retreat</div>
+  </header>
+
+  <div class="grid">
+
+    <nav class="menu frame" aria-label="Hauptmenü">
+      <div class="menu-head">&gt; navigation_</div>
+      <ul>
+        <li><a href="index.html"><span class="bullet">[#]</span> home</a></li>
+        <li><a href="crew.html"><span class="bullet">[#]</span> die crew</a></li>
+        <li><a href="stats.html"><span class="bullet">[#]</span> htb stats</a></li>
+        <li><a href="writeups.html"><span class="bullet">[#]</span> writeups</a></li>
+        <li><a href="lernpfad.html" class="active"><span class="bullet">[#]</span> lernpfad</a></li>
+        <li><a href="tools.html"><span class="bullet">[#]</span> tools &amp; setup</a></li>
+        <li><a href="kontakt.html"><span class="bullet">[#]</span> kontakt</a></li>
+      </ul>
+      <div class="status frame">
+        <div><span class="k">status</span> :: <span class="v">ONLINE</span></div>
+        <div><span class="k">members</span> :: <span class="v">05</span></div>
+        <div><span class="k">rank</span> :: <span class="v">HACKER</span></div>
+        <div><span class="k">uplink</span> :: <span class="v">SECURE</span><span class="blink">_</span></div>
+      </div>
+    </nav>
+
+    <main>
+      <div>
+        <p class="breadcrumb">~/hackerturtles/lernpfad</p>
+        <h1 class="page-title"><span class="pre">&gt;</span> lernpfad</h1>
+      </div>
+
+      <section class="panel frame">
+        <h2><span class="pre">[01]</span> fundament</h2>
+        <ul>
+          <li>Linux-Grundlagen, Bash, Netzwerk &amp; OSI-Modell</li>
+          <li>Enumeration: nmap, gobuster, ffuf – sauber &amp; methodisch</li>
+          <li>HTB Starting Point komplett durchziehen</li>
+        </ul>
+      </section>
+
+      <section class="panel frame">
+        <h2><span class="pre">[02]</span> exploitation</h2>
+        <ul>
+          <li>Web: SQLi, LFI/RFI, SSRF, File-Upload-Bypass</li>
+          <li>Reverse Shells, netcat, Payload-Handling (msfvenom)</li>
+          <li>Metasploit gezielt statt „spray and pray"</li>
+        </ul>
+      </section>
+
+      <section class="panel frame">
+        <h2><span class="pre">[03]</span> post-exploitation</h2>
+        <ul>
+          <li>Linux- &amp; Windows-Privilege-Escalation (linpeas/winpeas lesen können)</li>
+          <li>Active Directory: BloodHound, Kerberoasting, Lateral Movement</li>
+          <li>Pivoting &amp; SSH-Port-Forwarding</li>
+        </ul>
+      </section>
+
+      <section class="panel frame">
+        <h2><span class="pre">[04]</span> mastery</h2>
+        <ul>
+          <li>Eigene Notes zu wiederkehrenden TTPs führen</li>
+          <li>Jede Box = ein Writeup (siehe Writeups-Seite)</li>
+          <li>Ziel: Team-Rank <span class="prompt">PRO HACKER</span></li>
+        </ul>
+        <div class="note">
+          <span class="tag">[disclaimer]</span> Alles hier ist für legales Training in Lab-Umgebungen
+          (HackTheBox, TryHackMe, eigene VMs). Kein Testen ohne ausdrückliche Erlaubnis.
+        </div>
+      </section>
+
+      <div class="ticker frame">
+        <span>+++ ENUMERATE HARDER +++ ONE BOX AT A TIME +++ TRY HARDER, NOT LONGER +++ HACKERTURTLES +++</span>
+      </div>
+    </main>
+  </div>
+
+  <footer>:: HackerTurtles &copy; 2026 :: nur zu bildungs- und trainingszwecken ::</footer>
+</div>
+<script src="matrix.js"></script>
+</body>
+</html>

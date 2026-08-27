@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[ HackerTurtles ] // tools & setup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&family=Share+Tech+Mono&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="matrix"></canvas>
+<div class="wrap">
+
+  <header class="banner">
+    <div class="glitch" data-text="HACKERTURTLES">HACKERTURTLES</div>
+    <div class="tagline">// we shell · we pwn · we never retreat</div>
+  </header>
+
+  <div class="grid">
+
+    <nav class="menu frame" aria-label="Hauptmenü">
+      <div class="menu-head">&gt; navigation_</div>
+      <ul>
+        <li><a href="index.html"><span class="bullet">[#]</span> home</a></li>
+        <li><a href="crew.html"><span class="bullet">[#]</span> die crew</a></li>
+        <li><a href="stats.html"><span class="bullet">[#]</span> htb stats</a></li>
+        <li><a href="writeups.html"><span class="bullet">[#]</span> writeups</a></li>
+        <li><a href="lernpfad.html"><span class="bullet">[#]</span> lernpfad</a></li>
+        <li><a href="tools.html" class="active"><span class="bullet">[#]</span> tools &amp; setup</a></li>
+        <li><a href="kontakt.html"><span class="bullet">[#]</span> kontakt</a></li>
+      </ul>
+      <div class="status frame">
+        <div><span class="k">status</span> :: <span class="v">ONLINE</span></div>
+        <div><span class="k">members</span> :: <span class="v">05</span></div>
+        <div><span class="k">rank</span> :: <span class="v">HACKER</span></div>
+        <div><span class="k">uplink</span> :: <span class="v">SECURE</span><span class="blink">_</span></div>
+      </div>
+    </nav>
+
+    <main>
+      <div>
+        <p class="breadcrumb">~/hackerturtles/tools</p>
+        <h1 class="page-title"><span class="pre">&gt;</span> tools &amp; setup</h1>
+      </div>
+
+      <section class="panel frame">
+        <h2><span class="pre">&gt;</span> das arsenal</h2>
+        <table class="data">
+          <thead><tr><th>kategorie</th><th>tool</th><th>zweck</th></tr></thead>
+          <tbody>
+            <tr><td>OS</td><td>Kali / Parrot</td><td>Angriffs-Distro</td></tr>
+            <tr><td>Recon</td><td>nmap · ffuf · gobuster</td><td>Enumeration</td></tr>
+            <tr><td>Web</td><td>Burp Suite</td><td>Proxy &amp; Web-Testing</td></tr>
+            <tr><td>Exploit</td><td>Metasploit</td><td>Framework</td></tr>
+            <tr><td>AD</td><td>BloodHound · CrackMapExec</td><td>Domain-Enum &amp; -Angriff</td></tr>
+            <tr><td>Privesc</td><td>linpeas · winpeas</td><td>Rechte-Eskalation</td></tr>
+            <tr><td>Crack</td><td>hashcat · john</td><td>Passwort-Cracking</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="panel frame">
+        <h2><span class="pre">&gt;</span> lab-setup</h2>
+        <ul>
+          <li>VPN-Config von HTB einbinden, Zugriff testen (<code>ping</code> auf Target)</li>
+          <li>Snapshots der Angriffs-VM anlegen – vor jeder Session</li>
+          <li>Externer USB-WLAN-Adapter, falls Monitor-Mode gebraucht wird</li>
+          <li>Gemeinsamer Notiz-/Command-Cheatsheet im Repo pflegen</li>
+        </ul>
+        <div class="note">
+          <span class="tag">[hinweis]</span> Tools nur in autorisierten Lab-Umgebungen einsetzen.
+          Diese Liste ist ein Trainings-Referenzrahmen, keine Anleitung gegen fremde Systeme.
+        </div>
+      </section>
+
+      <div class="ticker frame">
+        <span>+++ KNOW YOUR TOOLS +++ AUTOMATE THE BORING, THINK THE HARD +++ HACKERTURTLES +++</span>
+      </div>
+    </main>
+  </div>
+
+  <footer>:: HackerTurtles &copy; 2026 :: nur zu bildungs- und trainingszwecken ::</footer>
+</div>
+<script src="matrix.js"></script>
+</body>
+</html>
